@@ -1,0 +1,19 @@
+# Set X-Frame-Options header to prevent Clickjacking
+/*
+X-Frame-Options: DENY
+
+# Set Content-Security-Policy header to define content restrictions
+/*
+Content-Security-Policy: default-src 'self'
+
+# Set X-Content-Type-Options header to prevent MIME type sniffing
+/*
+X-Content-Type-Options: nosniff
+
+# Set X-XSS-Protection header to enable XSS protection
+/*
+X-XSS-Protection: 1; mode=block
+
+# Set Strict-Transport-Security header to enforce HTTPS
+/*
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
